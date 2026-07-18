@@ -99,9 +99,125 @@
 
 
 //1. extract the digit from the number 5435.
-let num = 5435;
-while(num>0){ // 5435>0 // 543>0 // 54>0 // 5>0 // 0>0 False
-   let digit = num%10; // 5435%10 =5 // 543%10=3 // 54%10 = 4 // 5%10=5
-   console.log(digit); // 5 // 3 // 4 // 5
-   num = Math.floor((num/10));// 5435/10 => 543 || 543/10= 54 // 54/10=5 // 5/10=0
-}
+// let num = 5435;
+// while(num>0){ // 5435>0 // 543>0 // 54>0 // 5>0 // 0>0 False
+ //  let digit = num%10; // 5435%10 =5 // 543%10=3 // 54%10 = 4 // 5%10=5
+  // console.log(digit); // 5 // 3 // 4 // 5
+//    num = Math.floor((num/10));// 5435/10 => 543 || 543/10= 54 // 54/10=5 // 5/10=0
+// }
+
+
+// Basic Question -> for loop , while loop 
+// 1. prime number // 2 , 3  , 5 , 7, 11 ,13 , 17
+// 2. Armstrong number // 153  1*1*1 = 1   5*5*5 = 125  3*3*3 = 1+125+27 = 153
+// 3. perfect number // 6 -> 1 +2+3 = 6  =>  14 -> 1+2+7 => 10 => 28 -> 1+2+4+7+14= 28
+// 4. neon number 9  -> 9*9 -> 81  -> 8+1 = 9
+// 5. Strong number    145 -> 1! =1    4!= 24 5!=120 => 1+24+120 => 145
+// 6. Write a program to check if a given number is a palindrome.
+// ===========================================
+
+// 1 Prime Number 
+// 2,3,5, 7, 11,13,17
+
+// let num = 7;
+// let count =0;
+// for(let i=2;i<=num;i++){
+//     if(num%i==0){
+//         count++;
+//     }
+// }
+// if(count==1){
+//  console.log("Number is prime number")
+// }else{ 
+//  console.log("Number is not prime number")
+// }
+
+
+// 2. Armstrong number // 153  1*1*1 = 1   5*5*5 = 125  3*3*3 = 1+125+27 = 153
+// num = 153  1*1*1+5*5*5+3*3*3 = 1+125+27=153
+
+
+// let num = 153;
+// let n = num;
+// let sum = 0;
+// while(num>0){
+//    let digit = num%10;
+//    sum = sum+(digit*digit*digit);
+//    num = Math.floor(num/10);
+// }
+// if(n==sum){
+//     console.log("number is armstrong");
+// }else{
+//     console.log("Number is not armstrong");
+// }
+
+
+// 3. perfect number // 6 -> 1 +2+3 = 6  =>  14 -> 1+2+7 => 10 => 28 -> 1+2+4+7+14= 28
+// let num = 14;
+// let sum = 0;
+// for(let i=1;i<=num/2;i++){
+//     if(num%i==0){
+//         sum = sum+i;
+//     }
+// }
+// // console.log(sum);
+// if(num==sum){
+//     console.log("number is perfact number");
+// }else{
+//     console.log("number is not perfact number");
+// }
+
+// 6. Write a program to check if a given number is a palindrome.
+// let num = 122;
+// let n = num;
+// let rev = 0;
+// while(num>0){
+//  let digit =  num%10; // 1 // 2 //1
+//   rev = digit + (rev*10) // rev=1 // 2+10= 12 //  1+120 = 121
+//    num = Math.floor(num/10);
+// }
+// if(rev==n){
+//     console.log("number is palindrome number");
+// }else{
+//     console.log("number is not palindrome number");
+// }
+
+// 5. Strong number    145 -> 1! =1    4!= 24 5!=120 => 1+24+120 => 145
+// let num = 146;
+// let sum = 0;
+// let n= num;
+// while(num>0){
+//    let digit =  num%10;
+//    sum = sum + isFact(digit)// sum = 0+1 = 1 || sum = 1+24 = 25 || sum =25+120 = 145
+//    num = Math.floor( num/10);
+// }
+// function isFact(digit){
+//     let fact =1;
+//     for(let i=1;i<=digit;i++){
+//         fact = fact *i;
+//     }
+//     return fact;
+// }
+//     if(n==sum){
+//     console.log("number is strong number");
+// }else{
+//     console.log("number is not strong number");
+// }
+
+// neon number -> 9 -> 9*9 = 81
+// let num = 8;
+// let num1 = num*num;
+// let sum = 0;
+// while(num1>0){
+//     let digit =  num1%10;
+//     sum = sum +digit;
+//     num1 = Math.floor(num1/10)
+// }
+// if(sum==num){
+//     console.log("Number is neon number");
+// }else{
+//     console.log("Number is not neon number");
+// }
+
+// Leap year or not. 2016
+if(year%4==0 && (year%100!=0) || (year%400==0))

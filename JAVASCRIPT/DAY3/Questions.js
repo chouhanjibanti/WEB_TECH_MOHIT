@@ -36,16 +36,33 @@
 
 // 2)WAP TO SWAP TWO VARIABLES WITHOUT USING THIRD VARIABLE ? 
 
-let a = 10;
-let b = 20;
+// let a = 10;
+// let b = 20;
 
-console.log("Before swapping");
-console.log(a);
-console.log(b);
+// console.log("Before swapping");
+// console.log(a);
+// console.log(b);
 
-console.log("After Swapping");
-a = a+b; // a= 30
-b = a-b; // b = 30-20 = 10
-a = a-b; // a = 30-10 = 20
-console.log(a);
-console.log(b);
+// console.log("After Swapping");
+// a = a+b; // a= 30
+// b = a-b; // b = 30-20 = 10
+// a = a-b; // a = 30-10 = 20
+// console.log(a);
+// console.log(b);
+
+
+let fruits = "apple"
+        switch (fruits) {
+            case "banana":
+                console.log("Banana Fruit")
+                break;
+            case "apple":
+                console.log("Apple Fruit")
+                break;
+            case "sapota":
+               console.log("Sapota Fruit")
+                break;  
+            default:
+               console.log("wrong fruit name")
+                
+        }
