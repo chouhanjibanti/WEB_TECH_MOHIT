@@ -118,17 +118,17 @@
 // *       *
 // * * * * *
 
-for(let i=1;i<=5;i++){ // i=1 // i=2
-    let line = '';
-   for(let j=1;j<=5;j++){// j=1 1<=5 // 2<=5 T // j=5 5<=5
-     if(i==1 || i==5 || j==1 || j==5){ 
-        line = line + "*"; // line = * 
-    }else{
-        line = line +" "
-    }
-   }
-    console.log(line);
-}
+// for(let i=1;i<=5;i++){ // i=1 // i=2
+//     let line = '';
+//    for(let j=1;j<=5;j++){// j=1 1<=5 // 2<=5 T // j=5 5<=5
+//      if(i==1 || i==5 || j==1 || j==5){ 
+//         line = line + "*"; // line = * 
+//     }else{
+//         line = line +" "
+//     }
+//    }
+//     console.log(line);
+// }
 
 //        *
 //      * * *
@@ -137,3 +137,28 @@ for(let i=1;i<=5;i++){ // i=1 // i=2
 //    * * * * * 
 //      * * * 
 //        *
+
+
+// let rows = 7;
+// let star = -1;
+// let space = 4;
+// for(let i=1;i<=7;i++){
+//     let line = '';
+//      if(i<=4){
+//         star+=2;
+//         space--;
+//      }else{
+//         star-=2;
+//         space++;
+//      }
+//       for(let j=1;j<=space;j++){ // 
+//         line = line +" ";
+//     }
+//      for(let j=1;j<=star;j++){
+//         line = line +"*";
+//     }
+//     console.log(line);
+// }
+
+
+
